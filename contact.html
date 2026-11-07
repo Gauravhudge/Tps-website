@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Times Public School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. NEWS TICKER -->
+  <div class="news-bar">
+    <span class="news-label">LATEST NEWS</span>
+    <div class="news-track"><div class="news-items" id="newsItems"></div></div>
+  </div>
+
+  <!-- 2. HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Times Public School logo"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="admission.html">Online Admission</a>
+      <a href="complain.html">Complain</a>
+      <a href="about.html">About Us</a>
+      <a href="careers.html">Careers</a>
+      <a href="certificate.html">Certificate Request</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="calendar.html">Annual Calendar</a>
+    </nav>
+    <a href="login.html" class="btn-login">Log In</a>
+  </header>
+
+  <!-- CONTACT CONTENT -->
+  <main class="page">
+    <h1 class="page-title">Send In Your Query</h1>
+
+    <div class="contact-grid">
+      <form class="card js-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="field">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+        </div>
+        <div class="field">
+          <label for="message">Description</label>
+          <textarea id="message" name="message" rows="6" placeholder="Enter your query" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send query <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+
+      <div class="card map-card">
+        <h2 class="side-title">Find us</h2>
+        <iframe
+          title="Map showing The Times Public School, Udgir"
+          src="https://www.google.com/maps?q=Mitra+Nagar,+Malkapur,+Udgir,+Maharashtra+413517&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <p><i class="fa-solid fa-location-dot"></i> Mitra Nagar, Malkapur, Udgir, Maharashtra 413517</p>
+        <p><i class="fa-solid fa-phone"></i> 9834127200</p>
+        <p><i class="fa-solid fa-envelope"></i> tps27280701004@gmail.com</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 5. FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Get in Touch</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Mitra Nagar, Malkapur, Udgir, Maharashtra 413517</p>
+        <p><i class="fa-solid fa-phone"></i> 9834127200</p>
+        <p><i class="fa-solid fa-envelope"></i> tps27280701004@gmail.com</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="complain.html">Complain</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Feedback</h3>
+        <a href="complain.html" class="btn-complaint">Complaint Register</a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 The Times Public School. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
