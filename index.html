@@ -5,36 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Times Public School, Udgir</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
 
-  <!-- 1. NEWS TICKER -->
+  <!-- NEWS TICKER -->
   <div class="news-bar">
     <span class="news-label">LATEST NEWS</span>
     <div class="news-track"><div class="news-items" id="newsItems"></div></div>
   </div>
 
-  <!-- 2. HEADER -->
+  <!-- HEADER -->
   <header class="top-header">
     <div class="brand-row">
       <a href="index.html" class="brand">
         <img src="images/logo.jpg" alt="Times Public School logo">
-        <span class="brand-text">
-          <strong>The Times Public School</strong>
-          <small>Malkapur, Udgir</small>
-        </span>
+        <span class="brand-text"><strong>The Times Public School</strong><small>Malkapur, Udgir</small></span>
       </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
     </div>
-
     <nav class="navbar" id="mainNav" aria-label="Main menu">
       <ul class="nav-list">
         <li><a href="index.html" class="active">Home</a></li>
-
         <li class="has-dropdown">
           <button class="nav-btn" aria-expanded="false">About Us <i class="fa-solid fa-chevron-down"></i></button>
           <ul class="dropdown">
@@ -44,7 +38,6 @@
             <li><a href="infrastructure.html">Infrastructure</a></li>
           </ul>
         </li>
-
         <li class="has-dropdown">
           <button class="nav-btn" aria-expanded="false">Academics <i class="fa-solid fa-chevron-down"></i></button>
           <ul class="dropdown">
@@ -52,7 +45,6 @@
             <li><a href="calendar.html">Annual Calendar</a></li>
           </ul>
         </li>
-
         <li class="has-dropdown">
           <button class="nav-btn" aria-expanded="false">Admission <i class="fa-solid fa-chevron-down"></i></button>
           <ul class="dropdown">
@@ -60,7 +52,6 @@
             <li><a href="admission-status.html">Check Form Status</a></li>
           </ul>
         </li>
-
         <li><a href="careers.html">Careers</a></li>
         <li><a href="certificate.html">Certificate Request</a></li>
         <li><a href="complain.html">Complain</a></li>
@@ -70,38 +61,160 @@
     </nav>
   </header>
 
-  <!-- 3. BANNER SLIDER -->
- 
-    <section class="slider" id="slider">
-    <div class="slide active" style="background-image:url('images/banner1.jpg')"></div>
-    <div class="slide" style="background-image:url('images/banner2.png')"></div>
-
-    <div class="hero-caption">
-      <h2>Welcome to The Times Public School</h2>
-      <p>Nurturing young minds with modern education and traditional values.</p>
-      <a href="admission.html" class="btn-primary">Apply for Admission</a>
+  <!-- HERO SLIDER -->
+  <section class="slider" id="slider">
+    <div class="slide active">
+      <img class="s-blur" src="images/banner1.jpg" alt=""><img class="s-main" src="images/banner1.jpg" alt="The Times Public School building">
+      <div class="caption">
+        <h2>Welcome to The Times Public School</h2>
+        <p>Nurturing young minds with modern education and traditional values.</p>
+        <a href="admission.html" class="btn-primary">Apply for Admission</a>
+      </div>
     </div>
-
+    <div class="slide">
+      <img class="s-blur" src="images/banner2.png" alt=""><img class="s-main" src="images/banner2.png" alt="School vehicle facility available">
+    </div>
     <button class="arrow prev" id="prevBtn" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
     <button class="arrow next" id="nextBtn" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
   </section>
 
-  <!-- 4. ABOUT -->
-  <main class="about">
-    <p>In 1997 Mr. and Mrs. Kappikere with the help of Mr. and Mrs. George came together to establish St. Johns Education Society in Udgir, Maharashtra. It was a humble and honest beginning with a strong determination to provide the quality education to the children of Udgir.</p>
-    <p>Today, The Times Public School, Udgir is a pioneer in education. The School which originally has grown in strength and today has more than 900 students and 50+ teachers on rolls.</p>
-    <p>Education at TPS is a blend of modern education with traditional values imparted. Students reflect this multi dimensional culture and tradition.</p>
-    <p>One can see a strong bond between the Student and Teacher, and Student and School.</p>
-    <p>TPS focuses on all-round development of the student with equal importance accorded to Academics and extra-curricular Activities.</p>
-    <p>Now in the era of internet education this website is an attempt from the school management to provide a new medium of learning for the children and also a new medium of communication for the parents to interact with teachers and school management online.</p>
-    <p>Our School was established in the year 2000 (Reg. No. VLS 1000/509/2000)/1.</p>
-  </main>
+  <!-- ACHIEVEMENTS + BELIEF -->
+  <section class="section peach">
+    <div class="wrap two-cards">
+      <div class="info-card achieve">
+        <h2>Our Achievements</h2>
+        <p>TPS focuses on all-round development of the student, with equal importance given to academics and extra-curricular activities. Here we celebrate what our students and our school achieve.</p>
+      </div>
+      <div class="info-card belief">
+        <h2>Our Belief</h2>
+        <p>Education at TPS is a blend of modern education with traditional values. One can see a strong bond between the student and teacher, and between the student and the school.</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- 5. FOOTER -->
+  <!-- CHAMPIONS + NEWS -->
+  <section class="section mint">
+    <div class="wrap champ-grid">
+      <div class="champions">
+        <h2>Cheers to our Champions</h2>
+        <p class="sub">Our toppers and achievers</p>
+        <div class="tiles">
+          <div class="tile"><div class="av"><i class="fa-solid fa-user-graduate"></i><img src="images/champions/champ1.jpg" alt="" onerror="this.remove()"></div><b>Student Name</b>Achievement</div>
+          <div class="tile"><div class="av"><i class="fa-solid fa-user-graduate"></i><img src="images/champions/champ2.jpg" alt="" onerror="this.remove()"></div><b>Student Name</b>Achievement</div>
+          <div class="tile"><div class="av"><i class="fa-solid fa-user-graduate"></i><img src="images/champions/champ3.jpg" alt="" onerror="this.remove()"></div><b>Student Name</b>Achievement</div>
+          <div class="tile"><div class="av"><i class="fa-solid fa-user-graduate"></i><img src="images/champions/champ4.jpg" alt="" onerror="this.remove()"></div><b>Student Name</b>Achievement</div>
+          <div class="tile"><div class="av"><i class="fa-solid fa-user-graduate"></i><img src="images/champions/champ5.jpg" alt="" onerror="this.remove()"></div><b>Student Name</b>Achievement</div>
+        </div>
+      </div>
+      <aside class="news-box">
+        <h2>Latest News &amp; Announcements</h2>
+        <ul class="news-list" id="newsList"></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section class="section peach">
+    <div class="wrap">
+      <h2 class="fac-bar">Facilities at TPS</h2>
+      <div class="fac-grid">
+        <div class="fac-card" style="background:#a8420f">
+          <div class="fac-img"><i class="fa-solid fa-chalkboard-user"></i><img src="images/facilities/smart-classrooms.jpg" alt="" onerror="this.remove()"></div>
+          <div class="fac-body"><h3>Smart Classrooms</h3><p>Bright, well-equipped classrooms that make learning interactive and engaging.</p></div>
+        </div>
+        <div class="fac-card" style="background:#1e6aa7">
+          <div class="fac-img"><i class="fa-solid fa-book-open"></i><img src="images/facilities/library.jpg" alt="" onerror="this.remove()"></div>
+          <div class="fac-body"><h3>Library</h3><p>A quiet space with books, journals and reading material for every age group.</p></div>
+        </div>
+        <div class="fac-card" style="background:#1fa86a">
+          <div class="fac-img"><i class="fa-solid fa-futbol"></i><img src="images/facilities/playground.jpg" alt="" onerror="this.remove()"></div>
+          <div class="fac-body"><h3>Playground</h3><p>A spacious ground for sports, games and physical activities.</p></div>
+        </div>
+        <div class="fac-card" style="background:#19a08c">
+          <div class="fac-img"><i class="fa-solid fa-computer"></i><img src="images/facilities/computer-lab.jpg" alt="" onerror="this.remove()"></div>
+          <div class="fac-body"><h3>Computer Lab</h3><p>Computers for hands-on learning, so students build practical skills early.</p></div>
+        </div>
+        <div class="fac-card" style="background:#c46fcf">
+          <div class="fac-img"><i class="fa-solid fa-flask"></i><img src="images/facilities/science-lab.jpg" alt="" onerror="this.remove()"></div>
+          <div class="fac-body"><h3>Science Lab</h3><p>Labs for Physics, Chemistry and Biology to learn by experiment.</p></div>
+        </div>
+        <div class="fac-card" style="background:#a80c3c">
+          <div class="fac-img"><i class="fa-solid fa-bus"></i><img src="images/facilities/transport.jpg" alt="" onerror="this.remove()"></div>
+          <div class="fac-body"><h3>Transport</h3><p>School vehicles are available for safe travel to and from school.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEYOND THE CLASSROOM -->
+  <section class="section cream">
+    <div class="wrap split">
+      <div>
+        <h2>Learning Beyond the Classroom</h2>
+        <p>Since 1997, The Times Public School has grown from a humble and honest beginning into a pioneer in education in Udgir, with more than 900 students and 50+ teachers.</p>
+        <p>We encourage children to choose the activities they love, and we celebrate every effort, from classroom success to sports, culture and community.</p>
+      </div>
+      <div class="photo-grid">
+        <div class="photo"><i class="fa-solid fa-camera"></i><img src="images/events/beyond1.jpg" alt="" onerror="this.remove()"><span>School Life</span></div>
+        <div class="photo"><i class="fa-solid fa-camera"></i><img src="images/events/beyond2.jpg" alt="" onerror="this.remove()"><span>Activities</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section mint">
+    <div class="wrap">
+      <h2 class="events-title">Celebrations and Events at TPS</h2>
+      <div class="photo-grid">
+        <div class="photo"><i class="fa-solid fa-camera"></i><img src="images/events/event1.jpg" alt="" onerror="this.remove()"><span>Teachers Day</span></div>
+        <div class="photo"><i class="fa-solid fa-camera"></i><img src="images/events/event2.jpg" alt="" onerror="this.remove()"><span>Annual Day</span></div>
+        <div class="photo"><i class="fa-solid fa-camera"></i><img src="images/events/event3.jpg" alt="" onerror="this.remove()"><span>Sports Day</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHOOL ERP -->
+  <section class="section peach">
+    <div class="wrap erp">
+      <div class="phone"><img src="images/logo.jpg" alt=""><i></i><i></i><b>Log In</b></div>
+      <div>
+        <h2>School ERP &amp; Parent Portal</h2>
+        <p>Parents and students can log in online to stay connected with the school: admissions, certificate requests, complaints and the annual calendar, all in one place.</p>
+        <div class="btns">
+          <a href="login.html" class="btn-primary">Student / Parent Login</a>
+          <a href="admission.html" class="btn-outline">Online Admission</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS + GET IN TOUCH -->
+  <section class="reach">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat s1"><strong><span data-count="900">900</span>+</strong><small>Students</small></div>
+        <div class="stat s2"><strong><span data-count="50">50</span>+</strong><small>Teachers</small></div>
+        <div class="stat s3"><strong><span data-count="29">29</span>+</strong><small>Years Established</small></div>
+      </div>
+      <div class="touch">
+        <h2>Get In Touch</h2>
+        <p><i class="fa-solid fa-location-dot"></i> <b>Location:</b> The Times Public School, Mitra Nagar, Malkapur, Udgir, Maharashtra 413517</p>
+        <p><b>CALL US ON:</b></p>
+        <p class="call">9834127200</p>
+        <p><i class="fa-solid fa-envelope"></i> <b>Email:</b> tps27280701004@gmail.com</p>
+        <div class="btns">
+          <a href="contact.html" class="btn-primary">Send a Query</a>
+          <a href="https://www.google.com/maps?q=Mitra+Nagar,+Malkapur,+Udgir,+Maharashtra+413517" target="_blank" rel="noopener" class="btn-outline">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <h3>Get in Touch</h3>
+        <h3>The Times Public School</h3>
         <p><i class="fa-solid fa-location-dot"></i> Mitra Nagar, Malkapur, Udgir, Maharashtra 413517</p>
         <p><i class="fa-solid fa-phone"></i> 9834127200</p>
         <p><i class="fa-solid fa-envelope"></i> tps27280701004@gmail.com</p>
@@ -110,7 +223,7 @@
         <h3>Links</h3>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="complain.html">Complain</a></li>
+          <li><a href="admission.html">Online Admission</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -120,9 +233,13 @@
         <a href="complain.html" class="btn-complaint">Complaint Register</a>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 The Times Public School. All rights reserved.</p>
+    <p class="copyright">&copy; 2026 The Times Public School, Udgir. All rights reserved.</p>
+  </footer>
 
-      <!-- ANNOUNCEMENT POPUP -->
+  <a href="certificate.html" class="side-tab left">Certificate Request</a>
+  <a href="admission.html" class="side-tab right">Online Admission</a>
+
+  <!-- ANNOUNCEMENT POPUP -->
   <div class="popup" id="announcePopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" hidden>
     <div class="popup-box">
       <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
@@ -131,12 +248,7 @@
       <a href="admission.html" class="btn-primary">Apply Now</a>
     </div>
   </div>
-   </footer>
-
-  <a href="certificate.html" class="side-tab left">Certificate Request</a>
-  <a href="admission.html" class="side-tab right">Online Admission</a>
 
   <script src="js/main.js"></script>
-  <script src="js/nav.js"></script>
 </body>
 </html>
