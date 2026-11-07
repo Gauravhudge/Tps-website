@@ -57,3 +57,25 @@ document.querySelectorAll('.js-form').forEach(form => {
     form.reset();
   });
 });
+
+/* ---------- 5. Announcement popup ---------- */
+const popup = document.getElementById('announcePopup');
+const popupClose = document.getElementById('popupClose');
+
+function closePopup() {
+  popup.hidden = true;
+  try { sessionStorage.setItem('popupSeen', '1'); } catch (e) {}
+}
+
+if (popup) {
+  let seen = false;
+  try { seen = sessionStorage.getItem('popupSeen') === '1'; } catch (e) {}
+
+  if (!seen) {
+    setTimeout(() => { popup.hidden = false; popupClose.focus(); }, 600);
+  }
+
+  popupClose.addEventListener('click', closePopup);
+  popup.addEventListener('click', e => { if (e.target === popup) closePopup(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !popup.hidden) closePopup(); });
+}

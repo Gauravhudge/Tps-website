@@ -78,6 +78,20 @@
     <button class="arrow next" id="nextBtn" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
   </section>
 
+    <section class="slider" id="slider">
+    <div class="slide active" style="background-image:url('images/banner1.jpg')"></div>
+    <div class="slide" style="background-image:url('images/banner2.png')"></div>
+
+    <div class="hero-caption">
+      <h2>Welcome to The Times Public School</h2>
+      <p>Nurturing young minds with modern education and traditional values.</p>
+      <a href="admission.html" class="btn-primary">Apply for Admission</a>
+    </div>
+
+    <button class="arrow prev" id="prevBtn" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="arrow next" id="nextBtn" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+  </section>
+
   <!-- 4. ABOUT -->
   <main class="about">
     <p>In 1997 Mr. and Mrs. Kappikere with the help of Mr. and Mrs. George came together to establish St. Johns Education Society in Udgir, Maharashtra. It was a humble and honest beginning with a strong determination to provide the quality education to the children of Udgir.</p>
@@ -113,6 +127,16 @@
       </div>
     </div>
     <p class="copyright">&copy; 2026 The Times Public School. All rights reserved.</p>
+
+      <!-- ANNOUNCEMENT POPUP -->
+  <div class="popup" id="announcePopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" hidden>
+    <div class="popup-box">
+      <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
+      <h2 id="popupTitle">Admissions Open</h2>
+      <p>Admissions are now open at The Times Public School, Udgir. Apply online today.</p>
+      <a href="admission.html" class="btn-primary">Apply Now</a>
+    </div>
+  </div>
    </footer>
 
   <a href="certificate.html" class="side-tab left">Certificate Request</a>
